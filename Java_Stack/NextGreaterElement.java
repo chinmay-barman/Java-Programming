@@ -3,9 +3,8 @@ public class NextGreaterElement {
     public static int[] nextGreater(int arr[]){
         int res[] = new int[arr.length];
         Stack<Integer>st = new Stack<>();
-        res[arr.length-1] = -1;
-        st.push(arr[arr.length-1]);
-        for(int i=arr.length-2;i>=0;i--){
+        
+        for(int i=arr.length-1;i>=0;i--){
             while(st.size()>0 && st.peek()<arr[i]){
                 st.pop();
             }
