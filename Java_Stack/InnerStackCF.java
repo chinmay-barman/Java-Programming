@@ -1,5 +1,4 @@
-import java.util.Stack;
-import java.util.Scanner;
+import java.util.*;
 public class InnerStackCF {
     static void reverseStackRecursively(Stack<Integer>st){
         if(st.isEmpty()){
@@ -98,8 +97,6 @@ public class InnerStackCF {
         System.out.println(st);
         reverseStackRecursively(st);
         System.out.println(st);
-        while(true){
-            st.pop();
-        }
+        sc.close();
     }   
 }
