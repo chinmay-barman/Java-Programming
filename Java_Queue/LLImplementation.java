@@ -1,10 +1,4 @@
-class Node{
-    int val;
-    Node next;
-    Node(int val){
-        this.val = val;
-    }
-}
+import structures.Node;
 class QueueLL{
     private Node head = null;
     private Node tail = null;

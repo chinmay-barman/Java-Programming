@@ -1,11 +1,4 @@
-class Node{
-    int val;
-    Node next;
-    Node prev;
-    Node(int data){
-        this.val = data;
-    }
-}
+import structures.Node;
 public class DLLBasics {
     public static void displayDLL(Node head){
         Node temp = head;

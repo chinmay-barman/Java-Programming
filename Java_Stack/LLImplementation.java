@@ -1,10 +1,4 @@
-class Node{
-    int val;
-    Node next;
-    Node(int x){
-        val = x;
-    }
-}
+import structures.Node;
 class StackJava{
     private Node head = null;
     private int size = 0;

@@ -1,10 +1,4 @@
-class Node{
-    int data;
-    Node next;
-    Node(int data){
-        this.data = data;
-    }
-}
+import structures.Node;
 class CircularQueueLL{
     private Node head;
     private Node tail;
@@ -33,7 +27,7 @@ class CircularQueueLL{
         if(size == 0){
             throw new Exception("Error: Queue is empty");
         }
-        int data = head.data;
+        int data = head.val;
         if(size == 1){
             head = null;
             tail = null;
@@ -50,7 +44,7 @@ class CircularQueueLL{
         if(size == 0){
             throw new Exception("Error: Queue is empty");
         }
-        return head.data;
+        return head.val;
     }
     void displayQueue(){
         if(size == 0){
@@ -60,7 +54,7 @@ class CircularQueueLL{
         System.out.print("[");
         Node temp = head;
         while(true){
-            System.out.print(temp.data);
+            System.out.print(temp.val);
 
             if(temp == tail){
                 break;

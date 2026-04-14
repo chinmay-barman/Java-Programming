@@ -1,3 +1,4 @@
+import structures.Node;
 public class ImplementationLinkedList {
     public static void main(String args[]){
         LinkedList list = new LinkedList();
@@ -10,14 +11,6 @@ public class ImplementationLinkedList {
         list.insert(0, 87);
         list.display();
         System.out.println("Size of the linked List is: " + list.size());
-    }
-}
-class Node{
-    int data;
-    Node next;
-    Node(int data){
-        this.data = data;
-        this.next = null;
     }
 }
 class LinkedList{

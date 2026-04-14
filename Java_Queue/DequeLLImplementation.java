@@ -1,11 +1,4 @@
-class Node{
-    int data;
-    Node next;
-    Node prev;
-    Node(int data){
-        this.data = data;
-    }
-}
+import structures.Node;
 class DequeLL{
     private Node head;
     private Node tail;
@@ -47,7 +40,7 @@ class DequeLL{
         if(isEmpty()){
             throw new Exception("Deque is empty");
         }
-        int x = head.data;
+        int x = head.val;
         if(head == tail){
             head = tail = null;
         }
@@ -62,7 +55,7 @@ class DequeLL{
         if(isEmpty()){
             throw new Exception("Deque is empty");
         }
-        int x = tail.data;
+        int x = tail.val;
         if(head == tail){
             head = tail = null;
         }
@@ -76,23 +69,23 @@ class DequeLL{
         if(isEmpty()){
             throw new Exception("Queue is Empty!");
         }
-        return head.data;
+        return head.val;
     }
     int getRear() throws Exception{
         if(isEmpty()){
             throw new Exception("Queue is Empty!");
         }
-        return tail.data;
+        return tail.val;
     }
     void displayDeque(){
         Node temp = head;
         System.out.print("[");
         while(temp!=null){
             if(temp == tail){
-                System.out.println(temp.data+"]");
+                System.out.println(temp.val+"]");
                 return;
             }
-            System.out.print(temp.data+",");
+            System.out.print(temp.val+",");
             temp = temp.next;
         }
     }
